@@ -6,7 +6,7 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc -b",
-    "clean": "rm -rf node_modules; rm -rf lib; rm tsconfig.tsbuildinfo",
+    "clean": "rm -rf node_modules; rm -rf lib; rm -f tsconfig.tsbuildinfo",
     "lint": "eslint .",
     "test": "node ./node_modules/.bin/jest --testTimeout=600000 --watch src --runInBand --forceExit"
   },
