@@ -1,7 +1,7 @@
 import { CancellationScope, proxyActivities, sleep } from '@temporalio/workflow';
 import { doSth } from '@project/core';
 // Only import the activity types
-import type * as activities from './activities';
+import type * as activities from 'activities';
 
 const { greet } = proxyActivities<typeof activities>({
   startToCloseTimeout: '10 minute',

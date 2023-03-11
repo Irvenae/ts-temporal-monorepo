@@ -1,7 +1,7 @@
 import { Worker } from '@temporalio/worker';
 import { TestWorkflowEnvironment } from '@temporalio/testing';
-import { defaultWorkerOptions } from '../worker';
-import { example } from '../workflows';
+import { defaultWorkerOptions } from 'worker';
+import { example } from 'workflows';
 
 const taskQueue = 'hello';
 

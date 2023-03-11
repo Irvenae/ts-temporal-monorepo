@@ -4,8 +4,8 @@ import type { Configuration as WebpackConfiguration } from 'webpack';
 import { Context } from '@temporalio/activity';
 import { WorkflowClient } from '@temporalio/client';
 import { Worker } from '@temporalio/worker';
-import * as activities from './activities';
-import { ActivityInboundInterceptor } from './activityInterceptor';
+import * as activities from 'activities';
+import { ActivityInboundInterceptor } from 'activityInterceptor';
 
 export function defaultWorkerOptions(client: WorkflowClient) {
     return {
