@@ -1,0 +1,26 @@
+{
+  "name": "@project/ts-temporal-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Irvenae/ts-temporal-monorepo.git",
+  "author": "<irven.aelbrecht@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "ts-jest": "^29.0.5",
+    "turbo": "^1.8.3"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules; yarn clean",
+    "clean:libs": "turbo run clean",
+    "build": "turbo run build"
+  },
+  "engines": {
+    "node": ">=16.10",
+    "yarn": ">=1.21.1"
+  }
+}
